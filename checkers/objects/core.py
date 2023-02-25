@@ -41,10 +41,10 @@ class Core:
                             )
         if len(killing_moves) > 0:
             if prev_x != -1:
-                [v["kills"].append([(x + prev_x) / 2, (y + prev_y) / 2]) for v in killing_moves]
+                [v["kills"].append([(x + prev_x) // 2, (y + prev_y) // 2]) for v in killing_moves]
             return killing_moves
         elif len(killed_so_far) > 0:
-            return [{"x": x, "y": y, "kills": [[(x + prev_x) / 2, (y + prev_y) / 2]]}]
+            return [{"x": x, "y": y, "kills": [[(x + prev_x) // 2, (y + prev_y) // 2]]}]
         elif non_killing_moves:
             return non_killing_moves
         return None
