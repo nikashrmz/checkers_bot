@@ -1,7 +1,5 @@
 from typing import List
 
-import numpy as np
-
 from checkers.objects.piece import Piece, Side
 
 

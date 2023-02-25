@@ -1,6 +1,5 @@
 import enum
 from dataclasses import dataclass
-from typing import Protocol
 
 
 class Side(enum.Enum):
